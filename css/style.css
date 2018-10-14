@@ -6,7 +6,8 @@
 body {
 	/*font:18px 'Anonymous Pro', monospace;*/
 	/* Oswald / Montserrat Light*/
-	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Oswald', sans-serif;*/
+    font: 18px 'Raleway', sans-serif; 
 }
 header{
 	height:100vh;
@@ -21,8 +22,7 @@ header{
     align-items: center;
     justify-content: center;
 }
-.side
-	{
+.side{
 	display: none;
 	position: absolute;
 	left: 0;
@@ -30,7 +30,8 @@ header{
 	height:100vh;
 	background-color: #0f1919;
 	opacity: 0.85;
-	background:  linear-gradient( to right,
+	background:
+    linear-gradient( to right,
 	rgba(113, 81, 81, 0.2), 
 	rgba(0, 0, 0, 0.4)
 	);
@@ -49,23 +50,21 @@ header{
 	}
 .slogan {
     text-align:center;
-
     padding-bottom: 3rem;
 }
 .slogan h1{
     font-size: 1.8rem; 
-    padding:8px;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     color:#fcfcfc;
 	font-weight: 300;
 	text-shadow:2px 1px #393030;
 }
 .slogan h2{
     font-size: 1.2rem;
+    font-weight: 600;
     padding:5px;
     letter-spacing: 5px;
     color:#ffb100;
-	font-weight: 300;
 	text-shadow:1px 1px #000000;
 }
 .blink{
@@ -99,9 +98,10 @@ ul > li > a:hover{
 .rewind{
 	font-size:2.2rem;
 	position:absolute;
-	bottom:7%;
+	bottom:6%;
 	left:50%;
-	transform:translateX(-50%);
+    transform:translateX(-50%);
+	animation:rew 1s linear;
     animation-delay: 1s;
     text-decoration: none;
 }
@@ -109,22 +109,230 @@ ul > li > a:hover{
     color:#ffb100;
 	text-shadow:1px 2px black;
 }
+@keyframes rew {
+    25% {font-size: 2.4rem}
+    50% {font-size: 2.2rem} 
+}
 
 
 
+/* -------- */
+/* M A I N  */
+/* -------- */
+.spacer {
+	padding:5rem 0 5rem 0;
+}
+h2 {
+	text-align: center;
+	margin:1rem 0;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2.2rem;
+	color:#ffb100;
+	text-shadow:2px 2px #242424;
+	letter-spacing: 3px;
+}
 
 
+.social{
+	font-size:3.5rem;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+.social i
+{
+	padding:1.8rem 1.6rem;
+    margin:0 2rem;
+}
+.social i:hover
+{
+	background-color: rgb(132, 132, 132,0.55);
+    color:#020202;
+}
+/* --------- */
+/* A B O U T */
+/* --------- */
+/* 
+.test1{
+
+    background: 
+    linear-gradient(to bottom right,
+    rgb(0, 0, 0, 0.8), 
+    rgb(0, 0, 0, 0.6)
+    ),
+    url("../img/2_4_2500.jpg")
+	center/cover no-repeat;
+}
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;
+}
+.inner{
+    width: 75%;
+    margin: 0 auto;
+}
+.desc{
+	flex-grow: 1;
+	width: 33.33%;
+    min-width: 380px;
+    padding: 30px;
+}
+.desc p{
+    margin-bottom: 2rem;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	color:#f0f0f0;
+	text-shadow:1px 1px #000000;
+	line-height: 180%;
+	text-align: justify;
+}
+*/
+/* --------- */
+/* A B O U T */
+/* --------- */
+
+.about{
+	display:flex;
+	justify-content: center;
+    background: 
+    linear-gradient(to bottom right,
+    rgb(0, 0, 0, 0.8), 
+    rgb(0, 0, 0, 0.6)
+    ),
+    url("../img/2_4_2500.jpg")
+	center/cover no-repeat;
+    border-top:1px solid #343434;
+}
+.about-content{
+	width:75%;
+}
+.description p{
+    margin-bottom: 3rem;
+	font-size: 1.25rem;
+	letter-spacing: 1px;
+	color:#f0f0f0;
+	text-shadow:1px 1px #000000;
+	line-height: 180%;
+	text-align: justify;
+}
+.icons{
+	width:90%;
+    color:#f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem auto 0 auto;
+}
+.icon{
+    flex:1;
+    min-width: 180px;
+    margin: 2rem 0;
+}
+.icons i{
+    font-size:3.0rem;
+}
+.icons i:hover{
+    color: #ffb100;
+}
+.icons p{
+    font:300 1.3rem 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
 
 
+/* ------------- */
+/* G A L L E R Y */
+/* ------------- */
+.gallery{
+    background: 
+    linear-gradient(to bottom right,
+    rgb(0, 0, 0, 0.7), 
+    rgb(0, 0, 0, 0.5)
+    ),
+    url("../img/2_4_2500.jpg")
+	center/cover no-repeat;
+    border-top:1px solid #343434;
+}
+.gallery-content{
+    width:75%;
+    margin: 2rem auto;
+}
+.photos{
+    display: flex;
+	flex-wrap: wrap;
+}
+.photo{
+	flex-grow: 1;
+	width: 33.33%;
+    min-width: 380px;
+    padding: 5px;
+}
+.photo img{
+	opacity:0.90;
+	height:100%;
+    width:100%;
+}
+.photo img:hover{
+	opacity:1;
+}
 
+
+/* ------------- */
+/* G A L L E R Y */
+/* ------------- */
+#map{
+    height:400px;
+    width: 100%;
+}
+
+/* ------------- */
+/* G A L L E R Y */
+/* ------------- */
+
+footer{
+    text-align: center;
+    width: 100%;
+    padding:5em 0;
+    background: 
+    linear-gradient(to bottom right,
+    rgb(0, 0, 0, 0.8), 
+    rgb(0, 0, 0, 0.5)
+    ),
+    url("../img/art-city-city-lights-327064.jpg")
+	center/cover no-repeat;
+    color: white;
+}
+footer h2{
+    color: white;
+    text-transform: none;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px black;
+    margin: 0.5em 0 0.5em 0;
+    font-weight: 300;
+}
+footer small{
+    font-size: 0.8em;
+    color: #9b9b9b;
+}
+footer small a:link, footer small a:visited{
+    text-decoration: none;
+    color: #bebebe;
+}
+footer small a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 
 
 @media all and (min-width: 1600px ) {
 	
 	.slogan h1{
-    	font-size: 2.8rem; 
-
+    	font-size: 2.6rem; 
 	}
 	.slogan h2{
 		font-size: 2.2rem;
@@ -149,20 +357,19 @@ ul > li > a:hover{
 @media all and (min-width: 1280px)  and (max-width: 1600px) {
 	
 	.slogan h1{
-    	font-size: 2.6rem; 
+    	font-size: 2.4rem; 
 	}
 	.slogan h2{
 		font-size: 1.8rem;
-
 	}
 	.rewind{
-	font-size:2.6rem;
+        font-size:2.6rem;
 	}
 	.side
 	{
 		display: block;
 	}
-		nav
+    nav
 	{
 		display: block;
 	}
@@ -192,7 +399,7 @@ ul > li > a:hover{
 	}
 	.mobile-menu
 	{
-	display: none;
+        display: none;
 	}	
 }
 @media (min-width: 600px){
