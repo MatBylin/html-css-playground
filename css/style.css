@@ -4,11 +4,11 @@
     box-sizing: border-box;  
 }
 body {
-	/*font:18px 'Anonymous Pro', monospace;*/
-	/* Oswald / Montserrat Light*/
-	/*font-family: 'Oswald', sans-serif;*/
     font: 18px 'Raleway', sans-serif; 
 }
+/* ------------ */
+/* H E A D E R  */
+/* ----------- */
 header{
 	height:100vh;
 	background: 
@@ -29,7 +29,7 @@ header{
 	width:55px;
 	height:100vh;
 	background-color: #0f1919;
-	opacity: 0.85;
+	opacity: 0.65;
 	background:
     linear-gradient( to right,
 	rgba(113, 81, 81, 0.2), 
@@ -54,18 +54,20 @@ header{
 }
 .slogan h1{
     font-size: 1.8rem; 
-    letter-spacing: 5px;
-    color:#fcfcfc;
-	font-weight: 300;
+    font-weight: 300;
 	text-shadow:2px 1px #393030;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color:#fcfcfc;
 }
 .slogan h2{
     font-size: 1.2rem;
     font-weight: 600;
-    padding:5px;
+    text-shadow:1px 1px #000000;
+    text-transform: uppercase;
     letter-spacing: 5px;
     color:#ffb100;
-	text-shadow:1px 1px #000000;
+    padding:5px;
 }
 .blink{
     animation: blink 1s infinite;
@@ -113,153 +115,81 @@ ul > li > a:hover{
     25% {font-size: 2.4rem}
     50% {font-size: 2.2rem} 
 }
-
-
-
 /* -------- */
 /* M A I N  */
 /* -------- */
 .spacer {
-	padding:5rem 0 5rem 0;
+	padding:4rem 0 4rem 0;
 }
-h2 {
+.spacer-top {
+	padding-top 4rem;
+}
+.subtitle {
+    font-size: 1.6rem;
+    font-weight: 300;
 	text-align: center;
+    text-transform: uppercase;
+    text-shadow:2px 2px #242424;
+	letter-spacing: 4px;
 	margin:1rem 0;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 2.2rem;
-	color:#ffb100;
-	text-shadow:2px 2px #242424;
-	letter-spacing: 3px;
-}
-
-
-.social{
-	font-size:3.5rem;
-    display: flex;
-    justify-content: center;
-    color: aliceblue;
-}
-.social i
-{
-	padding:1.8rem 1.6rem;
-    margin:0 2rem;
-}
-.social i:hover
-{
-	background-color: rgb(132, 132, 132,0.55);
-    color:#020202;
+	color:#ffb100;	
 }
 /* --------- */
 /* A B O U T */
 /* --------- */
-/* 
-.test1{
-
-    background: 
-    linear-gradient(to bottom right,
-    rgb(0, 0, 0, 0.8), 
-    rgb(0, 0, 0, 0.6)
-    ),
-    url("../img/2_4_2500.jpg")
-	center/cover no-repeat;
-}
-.test{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	flex-wrap: wrap;
-}
-.inner{
-    width: 75%;
-    margin: 0 auto;
-}
-.desc{
-	flex-grow: 1;
-	width: 33.33%;
-    min-width: 380px;
-    padding: 30px;
-}
-.desc p{
-    margin-bottom: 2rem;
-	font-size: 1.3rem;
-	letter-spacing: 1px;
-	color:#f0f0f0;
-	text-shadow:1px 1px #000000;
-	line-height: 180%;
-	text-align: justify;
-}
-*/
-/* --------- */
-/* A B O U T */
-/* --------- */
-
 .about{
 	display:flex;
 	justify-content: center;
     background: 
     linear-gradient(to bottom right,
-    rgb(0, 0, 0, 0.8), 
-    rgb(0, 0, 0, 0.6)
+    rgb(0, 0, 0, 0.85), 
+    rgb(0, 0, 0, 0.65)
     ),
     url("../img/2_4_2500.jpg")
 	center/cover no-repeat;
-    border-top:1px solid #343434;
+    border-top:1px solid #2e2e2e;
 }
 .about-content{
-	width:75%;
+	width:85%;
 }
 .description p{
-    margin-bottom: 3rem;
-	font-size: 1.25rem;
-	letter-spacing: 1px;
-	color:#f0f0f0;
-	text-shadow:1px 1px #000000;
-	line-height: 180%;
+    font-size: 1.00rem;
 	text-align: justify;
+    text-shadow:1px 1px #000000;
+    letter-spacing: 1px;
+    line-height: 170%;
+    margin-bottom: 2rem;
+	color:#f0f0f0;
 }
-.icons{
-	width:90%;
-    color:#f0f0f0;
-    text-align: center;
+.social{
+	font-size:3.0rem;
+    color: #f0f0f0;
     display: flex;
     flex-wrap: wrap;
-    margin: 4rem auto 0 auto;
+    justify-content: center;
 }
-.icon{
-    flex:1;
-    min-width: 180px;
-    margin: 2rem 0;
+.social i
+{
+    text-align: center;
+    width:50%;
+	padding:1.8rem 1.6rem;
 }
-.icons i{
-    font-size:3.0rem;
+.social i:hover
+{
+	background-color: rgb(132, 132, 132,0.55);
+    color:#ffb100;
 }
-.icons i:hover{
-    color: #ffb100;
-}
-.icons p{
-    font:300 1.3rem 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-
 /* ------------- */
 /* G A L L E R Y */
 /* ------------- */
 .gallery{
     background: 
-    linear-gradient(to bottom right,
-    rgb(0, 0, 0, 0.7), 
-    rgb(0, 0, 0, 0.5)
-    ),
-    url("../img/2_4_2500.jpg")
-	center/cover no-repeat;
-    border-top:1px solid #343434;
+    #0f0f0f;
+    border-top:1px solid #272727;
 }
 .gallery-content{
-    width:75%;
-    margin: 2rem auto;
+    width:100%;
+    margin-top: 2rem;
 }
 .photos{
     display: flex;
@@ -268,8 +198,8 @@ h2 {
 .photo{
 	flex-grow: 1;
 	width: 33.33%;
-    min-width: 380px;
-    padding: 5px;
+    min-width: 300px;
+    padding: 0px;
 }
 .photo img{
 	opacity:0.90;
@@ -279,24 +209,24 @@ h2 {
 .photo img:hover{
 	opacity:1;
 }
-
-
-/* ------------- */
-/* G A L L E R Y */
-/* ------------- */
+/* ------------------ */
+/* M A P I F R A M E */
+/* ----------------- */
+.location{
+    background: 
+    #0f0f0f;
+}
 #map{
-    height:400px;
+    height:450px;
     width: 100%;
 }
-
-/* ------------- */
-/* G A L L E R Y */
-/* ------------- */
-
+/* ----------- */
+/* F O O T E R */
+/* ----------- */
 footer{
     text-align: center;
     width: 100%;
-    padding:5em 0;
+    padding:6em 0;
     background: 
     linear-gradient(to bottom right,
     rgb(0, 0, 0, 0.8), 
@@ -304,10 +234,10 @@ footer{
     ),
     url("../img/art-city-city-lights-327064.jpg")
 	center/cover no-repeat;
-    color: white;
 }
 footer h2{
-    color: white;
+    font-size: 1.2rem;
+    color: #f0f0f0;
     text-transform: none;
     letter-spacing: 2px;
     text-shadow: 1px 1px black;
@@ -315,7 +245,7 @@ footer h2{
     font-weight: 300;
 }
 footer small{
-    font-size: 0.8em;
+    font-size: 0.6em;
     color: #9b9b9b;
 }
 footer small a:link, footer small a:visited{
@@ -326,38 +256,56 @@ footer small a:hover{
     text-decoration: none;
     color: #ffffff;
 }
-
-
-
 @media all and (min-width: 1600px ) {
 	
 	.slogan h1{
-    	font-size: 2.6rem; 
+    	font-size: 2.6rem;
+        margin-bottom: 0.5rem
 	}
 	.slogan h2{
-		font-size: 2.2rem;
+		font-size: 2.1rem;
 	}
 	.rewind{
 	font-size:2.6rem;
 	}
-		.side
+    .side
 	{
 		display: block;
 	}
-		nav
+    nav
 	{
 		display: block;
-	}
-	.mobile-menu
-	{
-	display: none;
 	}	
+    .about-content{
+        width:68%;
+    }
+    .subtitle {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    .spacer {
+        padding:5rem 0 5rem 0;
+    }
+    .spacer-top {
+        padding-top: 5rem;
+    }
+    .description p{
+    font-size: 1.4rem;
+    }
+    .social i
+    {
+        width:25%;
+    }
+    .gallery-content{
+        width:100%;
+    }
 }
 
 @media all and (min-width: 1280px)  and (max-width: 1600px) {
 	
 	.slogan h1{
     	font-size: 2.4rem; 
+        margin-bottom: 0.5rem
 	}
 	.slogan h2{
 		font-size: 1.8rem;
@@ -369,16 +317,27 @@ footer small a:hover{
 	{
 		display: block;
 	}
+    .side p {
+        font-size: 0.8rem;
+    }
     nav
 	{
 		display: block;
 	}
-	.mobile-menu
-	{
-	display: none;
-	}	
+    .about-content{
+        width:72%;
+    }
+    .subtitle {
+        font-size: 2.2rem;	
+    }
+    .description p{
+    font-size: 1.4rem;
+    }
+    .social i
+    {
+        width:25%;
+    }
 }
-
 @media all and (min-width: 980px) and (max-width: 1280px) {
 	.slogan h1{
     	font-size: 2.2rem; 
@@ -386,26 +345,57 @@ footer small a:hover{
 	.slogan h2{
 		font-size: 1.6rem;
 	}
-		.rewind{
-	font-size:2.6rem;
+    .rewind{
+        font-size:2.6rem;
 	}
 	.side
 	{
 		display: block;
 	}
+    .side p {
+        font-size: 0.8rem;
+    }
 	nav
 	{
 		display: block;
 	}
-	.mobile-menu
-	{
-        display: none;
-	}	
+    .about-content{
+        width:75%;
+    }
+    .subtitle {
+        font-size: 2rem;	
+    }
+    .description p{
+    font-size: 1.3rem;
+    }
+    .social i
+    {
+        width:25%;
+    }
 }
-@media (min-width: 600px){
+@media all and (min-width: 600px) and (max-width: 980px) {
 	.side
 	{
 		display: block;
 	}
+    .side p {
+        font-size: 0.8rem;
+    }
+    .subtitle {
+        font-size: 1.8rem;	
+    }
+    .description p{
+    font-size: 1.2rem;
+    }
+    .social i
+    {
+        width:50%;
+    }
+    .gallery-content{
+        width:100%;
+    }
+    .photo{
+        min-width: 240px;
+    }
 
 }
