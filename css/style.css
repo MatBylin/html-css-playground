@@ -147,10 +147,11 @@ ul > li > a:hover{
     justify-content: center;
     background: 
     linear-gradient(to bottom,
-    rgb(0, 0, 0, 0.45), 
-    rgb(0, 0, 0, 0.45)
+    rgb(0, 0, 0, 0.8), 
+    rgb(0, 0, 0, 0.6)
     ),
-    url("../img/ep_naturalblack.png");
+    url("../img/2_4_2500.jpg")
+	center/cover no-repeat;
     border-top:1px solid #2e2e2e;
 }
 .about-content{
@@ -260,15 +261,21 @@ ul > li > a:hover{
 /* C O N T A C T */
 /* --------------*/
 .contact{
-    /*
-    background: 
+    /*background: 
     linear-gradient(to bottom,
     rgb(0, 0, 0, 0.6), 
     rgb(0, 0, 0, 0.3)
     ),
     url("../img/art-city-city-lights-327064.jpg")
 	center/cover no-repeat;*/
-    background: black;
+    /*background: linear-gradient(to bottom right, #1d1006,#2C170D);*/
+    background: 
+    linear-gradient(to bottom,
+    rgb(0, 0, 0, 0.8), 
+    rgb(0, 0, 0, 0.6)
+    ),
+    url("../img/2_4_2500.jpg")
+	center/cover no-repeat;
     border-top:1px solid #2e2e2e;
 }
 .contact-content{
@@ -352,10 +359,10 @@ footer{
     padding:6.5em 0;
     background: 
     linear-gradient(to bottom right,
-    rgb(0, 0, 0, 0.4), 
-    rgb(0, 0, 0, 0.2)
+    rgb(0, 0, 0, 0.6), 
+    rgb(0, 0, 0, 0.4)
     ),
-    url("../img/art-city-city-lights-327064.jpg")
+    url("../img/2_4_2500e.jpg")
 	center/cover no-repeat;
 }
 footer h2{
