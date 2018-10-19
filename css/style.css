@@ -3,6 +3,9 @@
 	margin: 0;
     box-sizing: border-box;  
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font: 18px 'Raleway', sans-serif; 
 }
@@ -12,11 +15,12 @@ body {
 header{
 	height:100vh;
 	background: 
-    linear-gradient(to bottom right,
-      rgb(0, 47, 75, 0.3), 
-      rgb(220, 66, 37, 0.1)
+    linear-gradient(to bottom,
+    rgb(0, 0, 0, 0.4), 
+    rgb(0, 0, 0, 0.25)
     ),
-    url("../img/art-city-city-lights-327064.jpg") center/cover no-repeat;
+    url("../img/background-calm-clouds-747964.jpg")
+	center/cover no-repeat;
 	overflow:hidden;
 	display: flex;
     align-items: center;
@@ -25,6 +29,7 @@ header{
 .side{
 	display: none;
 	position: absolute;
+    top:0;
 	left: 0;
 	width:55px;
 	height:100vh;
@@ -53,12 +58,12 @@ header{
     padding-bottom: 3rem;
 }
 .slogan h1{
-    font-size: 1.8rem; 
+    font-size: 1.7rem; 
     font-weight: 300;
-	text-shadow:2px 1px #393030;
+	text-shadow:2px 2px #2a2a2a;
     text-transform: uppercase;
-    letter-spacing: 7px;
-    color:#fcfcfc;
+    letter-spacing: 3px;
+    color:#ffffff;
 }
 .slogan h2{
     font-size: 1.2rem;
@@ -128,8 +133,8 @@ ul > li > a:hover{
     font-size: 1.6rem;
     font-weight: 300;
 	text-align: center;
-    text-transform: uppercase;
-    text-shadow:2px 2px #242424;
+    text-transform: capitalize;
+    text-shadow:2px 2px #272727;
 	letter-spacing: 4px;
 	margin:1rem 0;
 	color:#ffb100;	
@@ -138,21 +143,20 @@ ul > li > a:hover{
 /* A B O U T */
 /* --------- */
 .about{
-	display:flex;
-	justify-content: center;
+    display: flex;  
+    justify-content: center;
     background: 
-    linear-gradient(to bottom right,
-    rgb(0, 0, 0, 0.85), 
-    rgb(0, 0, 0, 0.65)
+    linear-gradient(to bottom,
+    rgb(0, 0, 0, 0.45), 
+    rgb(0, 0, 0, 0.45)
     ),
-    url("../img/2_4_2500.jpg")
-	center/cover no-repeat;
+    url("../img/ep_naturalblack.png");
     border-top:1px solid #2e2e2e;
 }
 .about-content{
 	width:85%;
 }
-.description p{
+.about-text{
     font-size: 1.00rem;
 	text-align: justify;
     text-shadow:1px 1px #000000;
@@ -163,20 +167,21 @@ ul > li > a:hover{
 }
 .social{
 	font-size:3.0rem;
-    color: #f0f0f0;
+    color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .social i
 {
+    flex: 1 50%;
     text-align: center;
-    width:50%;
 	padding:1.8rem 1.6rem;
+	text-shadow: 2px 2px #272727;
 }
 .social i:hover
 {
-	background-color: rgb(132, 132, 132,0.55);
+	background-color: rgb(132, 132, 132,0.2);
     color:#ffb100;
 }
 /* ------------- */
@@ -184,8 +189,12 @@ ul > li > a:hover{
 /* ------------- */
 .gallery{
     background: 
-    #0f0f0f;
-    border-top:1px solid #272727;
+    linear-gradient(to bottom,
+    rgb(0, 0, 0, 0.1), 
+    rgb(0, 0, 0, 0.1)
+    ),
+    url("../img/zwartevilt.png");
+    border-top:1px solid #1d1d1d;
 }
 .gallery-content{
     width:100%;
@@ -196,11 +205,9 @@ ul > li > a:hover{
 	flex-wrap: wrap;
 }
 .photo{
-	flex-grow: 1;
-	width: 33.33%;
+	flex: 1 33%;
     min-width: 300px;
     padding: 0px;
-    
     position: relative;
 }
 .photo img{
@@ -209,53 +216,129 @@ ul > li > a:hover{
     width:100%;
 }
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
 }
 .overlay2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #d09000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #d09000;
 }
 .photo:hover .overlay {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 .photo:hover .overlay2 {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 .text {
-  color: white;
-  font-size: 1.6rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* ------------- */
+/* C O N T A C T */
+/* --------------*/
+.contact{
+    /*
+    background: 
+    linear-gradient(to bottom,
+    rgb(0, 0, 0, 0.6), 
+    rgb(0, 0, 0, 0.3)
+    ),
+    url("../img/art-city-city-lights-327064.jpg")
+	center/cover no-repeat;*/
+    background: black;
+    border-top:1px solid #2e2e2e;
+}
+.contact-content{
+    margin:0 auto;
+    width:95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column1{
+    flex: 1.2;
+    min-width: 350px;
+    margin: 0 2rem;
+}
+.adress{
+    margin-top: 3rem;
+}
+.adress > i {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+.column2{
+    flex: 2;
+    min-width: 350px;
+    padding: 0 2rem;
+}
+.center{
+    text-align: center;
+}
+input[type=text], select, textarea {
+    font: 1rem 'Raleway', sans-serif; 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
+input[type=submit] {
+	font-size: 1.2rem;
+	font-weight: 100;
+    background-color: #edecec;
+    color: #1c1c1c;
+    padding: 16px 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1c1c1c;
+    color:#edecec;
+}
+
+.contact-form {
+    border-radius: 5px;
+    background-color: rgb(54, 54, 54, 0.6);
+    padding: 20px;
+    font: 16px 'Raleway', sans-serif; 
+}
+.contact-form label {
+    color: #fafafa;
+}
 /* ------------------ */
 /* M A P I F R A M E */
 /* ----------------- */
-.location{
-    background: #0f0f0f;
-}
 #map{
     height:450px;
     width: 100%;
@@ -266,11 +349,11 @@ ul > li > a:hover{
 footer{
     text-align: center;
     width: 100%;
-    padding:6em 0;
+    padding:6.5em 0;
     background: 
     linear-gradient(to bottom right,
-    rgb(0, 0, 0, 0.8), 
-    rgb(0, 0, 0, 0.5)
+    rgb(0, 0, 0, 0.4), 
+    rgb(0, 0, 0, 0.2)
     ),
     url("../img/art-city-city-lights-327064.jpg")
 	center/cover no-repeat;
@@ -286,7 +369,7 @@ footer h2{
 }
 footer small{
     font-size: 0.6em;
-    color: #9b9b9b;
+    color: #7e7e7e;
 }
 footer small a:link, footer small a:visited{
     text-decoration: none;
@@ -299,7 +382,7 @@ footer small a:hover{
 @media all and (min-width: 1600px ) {
 	
 	.slogan h1{
-    	font-size: 2.5rem;
+    	font-size: 2.4rem;
         margin-bottom: 0.5rem
 	}
 	.slogan h2{
@@ -319,6 +402,9 @@ footer small a:hover{
     .about-content{
         width:68%;
     }
+    .contact-content{
+        width:80%;
+    }
     .subtitle {
         font-size: 2.4rem;
         margin-bottom: 2rem;
@@ -329,23 +415,23 @@ footer small a:hover{
     .spacer-top {
         padding-top: 5rem;
     }
-    .description p{
+    .about-text{
     font-size: 1.4rem;
-    }
-    .social i
-    {
-        width:25%;
     }
     .text{
         font-size: 2rem;
     }
 	footer h2{
-		font-size: 1.9rem;
+		font-size: 2rem;
 		letter-spacing: 4px;
 	}
 	footer small{
 		font-size: 0.8em;
 	}
+    .social i
+    {
+        flex: 1;
+    }
 }
 
 @media all and (min-width: 1280px)  and (max-width: 1600px) {
@@ -373,6 +459,9 @@ footer small a:hover{
     .about-content{
         width:72%;
     }
+    .contact-content{
+        width:85%;
+    }
     .subtitle {
         font-size: 2.2rem;	
     }
@@ -382,22 +471,22 @@ footer small a:hover{
     .spacer-top {
         padding-top: 4rem;
     }
-    .description p{
+    .about-text{
     font-size: 1.4rem;
-    }
-    .social i
-    {
-        width:25%;
     }
     .text{
         font-size: 1.8rem;
     }
 	footer h2{
-		font-size: 1.7rem;
+		font-size: 1.9rem;
 	}
 	footer small{
 		font-size: 0.8em;
 	}
+    .social i
+    {
+        flex: 1;
+    }
 }
 @media all and (min-width: 980px) and (max-width: 1280px) {
 	.slogan h1{
@@ -423,6 +512,9 @@ footer small a:hover{
     .about-content{
         width:75%;
     }
+    .contact-content{
+        width:85%;
+    }
     .subtitle {
         font-size: 2rem;	
     }
@@ -432,12 +524,8 @@ footer small a:hover{
     .spacer-top {
         padding-top: 4rem;
     }
-    .description p{
+    .about-text{
     font-size: 1.3rem;
-    }
-    .social i
-    {
-        width:25%;
     }
     .text{
         font-size: 1.6rem;
@@ -448,6 +536,10 @@ footer small a:hover{
 	footer small{
 		font-size: 0.75em;
 	}
+    .social i
+    {
+        flex: 1;
+    }
 }
 @media all and (min-width: 600px) and (max-width: 980px) {
 	.side
@@ -460,18 +552,17 @@ footer small a:hover{
     .subtitle {
         font-size: 1.8rem;	
     }
-    .description p{
+    .about-text{
     font-size: 1.2rem;
+    }
+    .contact-content{
+        width:95%;
     }
     .spacer {
         padding:4rem 0 4rem 0;
     }
     .spacer-top {
         padding-top: 4rem;
-    }
-    .social i
-    {
-        width:50%;
     }
     .text{
         font-size: 1.6rem;
@@ -485,4 +576,8 @@ footer small a:hover{
 	footer small{
 		font-size: 0.7em;
 	}
+    .social i
+    {
+        flex: 1;
+    }
 }
