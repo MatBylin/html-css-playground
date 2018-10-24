@@ -1,16 +1,18 @@
 header{
-	background: url("../img/art-city-city-lights-327064.jpg");
+	background: url("../img/background-calm-clouds-747964e.jpg");
     background-size: cover;
 }
 .about{
 	background: url("../img/2_4_2500e.jpg");
     background-size: cover;
 }
-.description{
+.gallery{
+    background: black;
+}
+.contact{
 	background: url("../img/2_4_2500e.jpg");
     background-size: cover;
 }
 footer{
-	background: url("../img/art-city-city-lights-327064.jpg");
-    background-size: cover;
+    background: black;
 }
